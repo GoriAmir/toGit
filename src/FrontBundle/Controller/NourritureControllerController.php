@@ -12,7 +12,7 @@ class NourritureControllerController extends Controller
      */
     public function listerNourritureAction()
     {
-        return $this->render('FrontBundle:NourritureController:nourriture.html.twig', array(
+        return $this->render('@Front/NourritureController/nourriture.html.twig', array(
             // ...
         ));
     }
@@ -22,7 +22,7 @@ class NourritureControllerController extends Controller
      */
     public function ajouterNourritureAction()
     {
-        return $this->render('FrontBundle:NourritureController:ajouter_nourriture.html.twig', array(
+        return $this->render('@Front/NourritureController/ajouter_nourriture.html.twig', array(
             // ...
         ));
     }

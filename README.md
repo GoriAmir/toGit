@@ -31,6 +31,16 @@ Project estimated end date : 30 March 2018
 ------
 
 **Note pour debugger quelque trucs**
+* Si vous n'arrivez pas à afficher la page normalement(mais en app_dev.php est bon), vider la cache de prod s'il vous plaît avec ce commande :
+    
+    **php bin/console cache:clear --env=prod**
+    
+* S'il a marqué que symfony ne trouve pas votre Bundle(normalement le FrontBundle), faites-vous comme ceci:
+
+    **php composer.phar dump-autoload**
+    
+    (**Attention** Si n'avez pas installer composer avec composer.exe, utilisez le composer.phar et copiezez-le dans le root de projet et puis lancer la commande ci-dessus)
+    
 * Pour le path render dans votre fonction action d'un controller, le syntaxe correct est comme ceci : 
 
     **'@Front/Votre_Controller/le_twig_correspondant'**

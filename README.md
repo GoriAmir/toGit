@@ -21,6 +21,29 @@ Project estimated end date : 30 March 2018
 
 ----
 
+**Notes pour membres du projet**
+
+* Avant de pusher votre travail, oubliez pas de **PULL** le projet pour avoir la version courrant de notre projet. Puis, vous pouvez push le votre tranquillemnet.
+* Il faut preciser chaque message de votre commit
+* N'oubliez pas de générer votre propre Controller avec le bon nom (FrontBundle:MenuController) et puis précisez les actions nécessaire(ou vous pouvez les ajouter manuellement) et générer le template de twig aussi(**Attention de les mettez dans le bon répertoire**)
+
+
+------
+
+**Note pour debugger quelque trucs**
+* Pour le path render dans votre fonction action d'un controller, le syntaxe correct est comme ceci : 
+
+    **'@Front/Votre_Controller/le_twig_correspondant'**
+
+* N'oubliez pas de voir le routage correcte sur les actions de votre controller
+
+* Pour faire fonctionner les bar de navigateur(des plusieurs menu), il faut mettre à jour **tous les paths** dans "href" des liste dans le fichier suivant:
+    
+    **app/Ressources/views/base.html.twig**
+
+    Les nom de tous les path dépendent sur comment vous avez nommé votre répertoire local.
+    
+
 
 What's inside?
 --------------

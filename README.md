@@ -16,7 +16,9 @@ Welcome to our project page. This is our Licence 3 MIAGE project.
 This is a Symfony Standard Edition project with the version "3.4"
 
 Project start date : December 2017
+
 Project estimated end date : 30 March 2018
+
 ----
 
 

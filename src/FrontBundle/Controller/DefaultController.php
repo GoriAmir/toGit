@@ -12,8 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        $repas = $this->getDoctrine()->getRepository('FrontBundle:Nourriture')->findAll();
-
-        return $this->render('@Front/Default/index.html.twig', array('listeRepas' => $repas));
+        return $this->render('@Front/Default/index.html.twig');
     }
 }
